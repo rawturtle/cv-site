@@ -1,8 +1,8 @@
 <template>
-  <div class="is-ancestor">
-    <div class="columns">
-
-      <div class="column">
+  <div class="tile is-ancestor" style="height: 70vh;">
+    <div class="tile ">
+      <div class="tile is-parent is-4">
+        <div class="tile is-child contact">
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
@@ -22,8 +22,58 @@
             </div>
           </div>
         </div>
+      </div>
 
-      <div class="column">
+      <div class="tile is-parent is-5 is-vertical">
+        <div class="tile is-child about">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                About Me
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <p>I was living in Melbourne teaching students how to SCUBA dive for a year before deciding to leave my
+                  underwater office and head to dry(ish) land in Otago.</p>
+
+                <p>Studying Computer Science helped me understand how I learn, and how to break problems down into the
+                  smaller easier to solve sub-problems.</p>
+
+                <p>I enjoy the challenges that being a developer offers as I am very determined and goal orientated.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-child interests">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Interests
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <p>I spend most of my time obsessing over upcoming swells/weather patterns and the latest tech trends on
+                  <a href="https://medium.com">Medium</a> and <a href="https://reddit.com">Reddit</a></p>
+                <p>My interests include:</p>
+                <ul>
+                  <li>Surfing</li>
+                  <li>More surfing</li>
+                  <li>Coding</li>
+                  <li>Video Games</li>
+                  <li>Skateboarding</li>
+                  <li>Tramping</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-parent is-3">
+        <div class="tile is-child education">
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
@@ -55,44 +105,18 @@
                 <p><i class="fas fa-graduation-cap"></i>  Certificate of Completion</p>
               </div>
             </div>
+
+            <div class="card">
+              <div class="card-content">
+                <p><i class="fas fa-calendar-alt"></i>  <strong>2009</strong></p>
+                <p><i class="fas fa-university"></i>  CPIT</p>
+                <p><i class="fas fa-graduation-cap"></i>  Certificate of Adventure Recreation</p>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              About Me
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <p>
-                I am looking for work in the Technology Industry. I have a passion for developing and enjoy learning new skills. blahahahhaha
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="gap"></div>
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Interests
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>Surfing</li>
-                <li>Spearfishing</li>
-                <li>Skateboarding</li>
-                <li>Tramping</li>
-                <li>Coding</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -105,14 +129,14 @@
   }
 </script>
 
-<style>
+<style scoped>
   i {
     width: 20px;
   }
   ul {
     margin-top: 0!important;
   }
-  .card-header {
+  .card-header-title{
     background-color: #e7e7e7;
   }
   .gap {
