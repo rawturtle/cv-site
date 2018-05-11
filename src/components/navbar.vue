@@ -1,8 +1,9 @@
 <template lang="html">
-  <nav class="navbar is-transparent">
+  <nav class="navbar has-shadow">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+      <a class="navbar-item" id="brand-link" href="#">
+        <!--<img src="../assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="125" height="55">-->
+        <p id="brand">/ crawstorn /</p>
       </a>
       <div class="navbar-burger burger" data-target="app-navbar">
         <span></span>
@@ -17,14 +18,10 @@
           <router-link to="/home" class="link is-info">Home</router-link>
         </a>
         <a class="navbar-item">
-          <router-link to="/transcript" class="link is-info">Transcript</router-link>
-        </a>
-        <a class="navbar-item">
-          <router-link to="about" class="link is-info">About</router-link>
+          <router-link to="/portfolio" class="link is-info">Portfolio</router-link>
         </a>
         <a class="navbar-item">
           <router-link to="/transcript" class="link is-info">Transcript</router-link>
-
         </a>
       </div>
     </div>
@@ -51,8 +48,8 @@
               let $target = document.getElementById(target);
 
               // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-              $el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
+              $el.classList.toggle('active');
+              $target.classList.toggle('active');
 
             });
           });
@@ -63,23 +60,17 @@
   }
 </script>
 <style>
-  .is-active {
-    /*border-bottom: aqua 1px solid;*/
+  .navbar {
+    /*border-bottom: 1px solid black;*/
   }
-
-  #name-center {
-    font-size: 30px;
+  #brand {
+    font-size: 25px;
+    font-style: italic;
+    margin-top: -5px;
+  }
+  #brand-link:hover{
+    color: #4a4a4a;
   }
 </style>
 
 
-<!--
-      <router-link to="/home" class="link is-info">Home</router-link>
-
-      <router-link to="/transcript" class="link is-info">Transcript</router-link>
-
-      <router-link to="about" class="link is-info">About</router-link>
-
-      <router-link to="/transcript" class="link is-info">Transcript</router-link>
-
--->

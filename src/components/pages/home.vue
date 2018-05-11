@@ -1,5 +1,5 @@
 <template>
-  <div class="tile is-ancestor" style="height: 70vh;">
+  <div class="tile is-ancestor">
     <div class="tile ">
       <div class="tile is-parent is-4">
         <div class="tile is-child contact">

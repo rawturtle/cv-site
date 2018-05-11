@@ -8,6 +8,7 @@
           <a href="https://bulma.io/">Bulma</a>
           by Charlie Rawstorn
         </p>
+        <p><i class="fab fa-github"></i><a href="https://github.com/rawturtle/cv-site"> Source Code</a></p>
       </div>
     </div>
   </footer>
