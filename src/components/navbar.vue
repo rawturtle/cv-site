@@ -1,12 +1,8 @@
 <template lang="html">
   <nav class="navbar has-shadow">
-    <div class="navbar-brand">
-      <a class="navbar-item" id="brand-link" href="#">
-        <!--<img src="../assets/images/logo.png" alt="lazy ass logo design that needs work" width="125" height="55">-->
-        <!--<router-link to="/home" class="link is-info"><p id="brand">/ crawstorn /</p></router-link>-->
 
-        <p id="brand">/ crawstorn /</p>
-      </a>
+    <div class="navbar-brand">
+        <router-link to="/home" class="link is-info navbar-item"><p id="brand">/ crawstorn /</p></router-link>
       <div class="navbar-burger burger" data-target="app-navbar">
         <span></span>
         <span></span>
@@ -16,17 +12,12 @@
 
     <div id="app-navbar" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
-          <router-link to="/home" class="link is-info">Home</router-link>
-        </a>
-        <a class="navbar-item">
-          <router-link to="/portfolio" class="link is-info">Portfolio</router-link>
-        </a>
-        <a class="navbar-item">
-          <router-link to="/transcript" class="link is-info">Transcript</router-link>
-        </a>
+          <router-link to="/home" class="link is-info navbar-item">Home</router-link>
+          <router-link to="/portfolio" class="link is-info navbar-item">Portfolio</router-link>
+          <router-link to="/transcript" class="link is-info navbar-item">Transcript</router-link>
       </div>
     </div>
+
   </nav>
 </template>
 <script>
@@ -52,25 +43,24 @@
               // Toggle the class on both the "navbar-burger" and the "navbar-menu"
               $el.classList.toggle('is-active');
               $target.classList.toggle('is-active');
-
             });
           });
         }
-
       });
     }
   }
 </script>
-<style>
-  .navbar {
-    /*border-bottom: 1px solid black;*/
+
+<style scoped>
+  .navbar-menu a.is-active {
+    border-bottom: 1px black solid;
   }
   #brand {
     font-size: 25px;
     font-style: italic;
     margin-top: -5px;
   }
-  #brand-link:hover{
+  .navbar-brand a:hover{
     color: #4a4a4a;
   }
 </style>

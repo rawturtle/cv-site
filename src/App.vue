@@ -7,7 +7,6 @@
         </div>
       </section>
     <app-footer></app-footer>
-
   </div>
 </template>
 
@@ -27,5 +26,4 @@
 <style>
 #app {
 }
-  .section {}
 </style>

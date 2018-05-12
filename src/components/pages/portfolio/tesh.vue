@@ -46,5 +46,7 @@
 </script>
 
 <style>
-
+  .divider {
+    margin-top: 0;
+  }
 </style>

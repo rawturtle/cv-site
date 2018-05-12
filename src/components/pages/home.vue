@@ -138,7 +138,7 @@
   }
   .card-header-title{
     /*background-color: #e7e7e7;*/
-    background-color: #ADD8E6;
+    /*background-color: #8a8a8a;*/
 
   }
 
