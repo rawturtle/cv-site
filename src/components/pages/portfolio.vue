@@ -34,7 +34,7 @@
         <igtimi-one></igtimi-one>
       </p>
       <p  v-bind:class="{'is-active': isActive('tab3')}">
-        Videos
+        <octagon></octagon>
       </p>
       <p v-bind:class="{'is-active': isActive('tab4')}">
         Documents
@@ -48,12 +48,16 @@
 <script>
   import igtimiTwo from "./portfolio/igtimiTwo";
   import igtimiOne from "./portfolio/igtimiOne";
+  import octagon from "./portfolio/octagon";
+
 
   export default {
     name: 'about',
     components: {
       'igtimi-one': igtimiOne,
       'igtimi-two': igtimiTwo,
+      octagon,
+
     },
     data() {
       return {
