@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class="tabs is-centered is-boxed">
+    <div class="tabs is-boxed">
       <ul>
         <li @click="selected='tab1'" v-bind:class="{'is-active': isActive('tab1')}">
           <a>
-            <span>Igtimi #2</span>
+            <span>Igtimi 2</span>
           </a>
         </li>
         <li @click="selected='tab2'" v-bind:class="{'is-active': isActive('tab2')}">
           <a>
-            <span>Igtimi #1</span>
+            <span>Igtimi 1</span>
           </a>
         </li>
         <li @click="selected='tab3'" v-bind:class="{'is-active': isActive('tab3')}">
@@ -19,7 +19,7 @@
         </li>
         <li @click="selected='tab4'" v-bind:class="{'is-active': isActive('tab4')}">
           <a>
-            <span>Tesh Website</span>
+            <span>Tesh</span>
           </a>
         </li>
       </ul>
@@ -37,7 +37,7 @@
         <octagon></octagon>
       </p>
       <p v-bind:class="{'is-active': isActive('tab4')}">
-        Documents
+        <tesh></tesh>
       </p>
     </div>
     <!--end content-->
@@ -49,6 +49,7 @@
   import igtimiTwo from "./portfolio/igtimiTwo";
   import igtimiOne from "./portfolio/igtimiOne";
   import octagon from "./portfolio/octagon";
+  import tesh from "./portfolio/tesh";
 
 
   export default {
@@ -56,8 +57,8 @@
     components: {
       'igtimi-one': igtimiOne,
       'igtimi-two': igtimiTwo,
-      octagon,
-
+      'octagon': octagon,
+      'tesh': tesh
     },
     data() {
       return {

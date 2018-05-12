@@ -15,32 +15,31 @@
       </div>
 
       <div class="column container">
+        <hr class="is-hidden-desktop divider">
         <p class="title"><i class="fas fa-code"></i> Code</p>
         <div class="content">
           <p><strong>Language: </strong>C#</p>
           <p><strong>Template Files: </strong>XML</p>
           <p><strong>Version Control: </strong> Mercurial</p>
           <p><strong>Application Type: </strong> <a href="https://docs.microsoft.com/en-us/windows/uwp/index">UWP</a></p>
-
         </div>
       </div>
-
     </div>
 
     <div class="columns">
-      <div class="column box">
-        <p class="title">Links</p>
-
+      <div class="column">
+        <hr class="is-hidden-desktop divider">
+        <p class="title"><i class="fas fa-link"></i> Links</p>
         <div class="columns">
           <div class="column">
             <div class="content">
               <p><i class="fas fa-globe"></i><a href="https://www.microsoft.com/en-nz/store/p/yachtbot-manager/9pfcbq1f4lf2?rtc=1"> YachtBot Manager</a></p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
+
   </section>
 </template>
 

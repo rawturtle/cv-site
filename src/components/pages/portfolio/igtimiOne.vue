@@ -15,6 +15,7 @@
       </div>
 
       <div class="column container">
+        <hr class="is-hidden-desktop divider">
         <p class="title"><i class="fas fa-code"></i> Code</p>
         <div class="content">
           <p><strong>HTML:</strong>HTML5</p>
@@ -22,16 +23,15 @@
           <p><strong>JavaScript:</strong> Native JavaScript and a modified plugin slick.js for the image carousels</p>
           <p><strong>Backend Framework:</strong> Ruby On Rails</p>
           <p><strong>Version Control:</strong> Mercurial</p>
-
         </div>
       </div>
 
     </div>
 
     <div class="columns">
-      <div class="column box">
-        <p class="title">Links</p>
-
+      <div class="column">
+        <hr class="is-hidden-desktop divider">
+        <p class="title"><i class="fas fa-link"></i> Links</p>
         <div class="columns">
           <div class="column">
             <div class="content">
@@ -63,5 +63,7 @@
 </script>
 
 <style>
-
+  .divider {
+    margin-top: 0;
+  }
 </style>
