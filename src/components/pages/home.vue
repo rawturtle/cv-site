@@ -1,30 +1,30 @@
 <template>
-  <div class="tile is-ancestor">
-    <div class="tile ">
+    <div class="tile">
+
       <div class="tile is-parent is-4">
         <div class="tile is-child contact">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Contact
-            </p>
-          </header>
-          <div class="card-image">
-            <figure class="image">
-              <img src="../../assets/images/myface.jpg" alt="My face">
-            </figure>
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Contact
+              </p>
+            </header>
+            <div class="card-image">
+              <figure class="image">
+                <img src="../../assets/images/myface.jpg" alt="My face">
+              </figure>
             </div>
             <div class="card-content">
-              <p class=""><i class="fas fa-user"></i>  Charlie Rawstorn</p>
+              <p class=""><i class="fas fa-user"></i> Charlie Rawstorn</p>
               <i class="fas fa-envelope"></i> <a href="mailto:c.rawstorn@gmail.com"> c.rawstorn@gmail.com</a>
-              <p><i class="fas fa-phone"></i>  027 3466 031</p>
-              <i class="fab fa-github"></i><a href="https://github.com/rawturtle">  rawturtle</a>
+              <p><i class="fas fa-phone"></i> 027 3466 031</p>
+              <i class="fab fa-github"></i><a href="https://github.com/rawturtle"> rawturtle</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="tile is-parent is-5 is-vertical">
+      <div class="tile is-parent is-3 is-vertical">
         <div class="tile is-child about">
           <div class="card">
             <header class="card-header">
@@ -34,14 +34,10 @@
             </header>
             <div class="card-content">
               <div class="content">
-                <p>I was living in Melbourne teaching students how to SCUBA dive for a year before deciding to leave my
-                  underwater office and head to dry(ish) land in Otago.</p>
+                <p>I was living in Melbourne teaching students how to SCUBA dive before I decided to leave my
+                  underwater office and head to dry(ish) land in Otago to study.</p>
 
-                <p>Studying Computer Science helped me understand how I learn, and how to break problems down into the
-                  smaller easier to solve sub-problems.</p>
-
-                <p>I enjoy the challenges that being a developer offers as I am very determined and goal orientated.</p>
-
+                <p>I recently finished a BSc in Computer Science at Otago University. I am looking for work in the Dunedin Tech sector</p>
               </div>
             </div>
           </div>
@@ -64,7 +60,6 @@
                   <li>Coding</li>
                   <li>Video Games</li>
                   <li>Skateboarding</li>
-                  <li>Tramping</li>
                 </ul>
               </div>
             </div>
@@ -72,59 +67,123 @@
         </div>
       </div>
 
-      <div class="tile is-parent is-3">
-        <div class="tile is-child education">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Education
-            </p>
-          </header>
-          <div class="content">
+      <div class="tile is-parent is-vertical is-5">
+        <div class="tile is-child work-history">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Work History
+              </p>
+            </header>
+            <div class="content">
 
-            <div class="card">
-              <div class="card-content">
-                <p><i class="fas fa-calendar-alt"></i>  <strong>2015 - 2017</strong></p>
-                <p><i class="fas fa-university"></i>  University of Otago</p>
-                <p><i class="fas fa-graduation-cap"></i>  BSc majoring in Computer Science</p>
+              <div class="card">
+                <div class="card-content">
+                  <p class="header"><i class="fas fa-building"></i><a href="https://tecto.com/">Tecto Ltd</a></p>
+                  <div class="columns">
+                    <div class="column is-5">
+                      <p><i class="fas fa-calendar-alt"></i>March 2018 to Present</p>
+                    </div>
+                    <div class="column">
+                      <p><i class="fas fa-tasks"></i>Web Developer <br> Using Vue.js to create bespoke web applications</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="card-content">
-                <p><i class="fas fa-calendar-alt"></i>  <strong>2013</strong></p>
-                <p><i class="fas fa-university"></i>  Dive Otago</p>
-                <p><i class="fas fa-graduation-cap"></i>  Diploma in Professional SCUBA Instruction</p>
+              <div class="card">
+                <div class="card-content">
+                  <p><i class="fas fa-building"></i><a href="http://www.igtimi.com/">Igtimi Ltd</a></p>
+                  <div class="columns">
+                    <div class="column is-5">Nov 2017 to Dec 2017</div>
+                    <div class="column">
+                      <p>Internship <br> Creating an application to parse config files into a GUI so they can be reconfigured by the client.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="card-content">
-                <p><i class="fas fa-calendar-alt"></i>  <strong>2012</strong></p>
-                <p><i class="fas fa-university"></i>  Outward Bound</p>
-                <p><i class="fas fa-graduation-cap"></i>  Certificate of Completion</p>
+              <div class="card">
+                <div class="card-content">
+                  <p><i class="fas fa-building"></i><a href="https://www.otago.ac.nz/">Otago University</a></p>
+                  <div class="columns">
+                    <div class="column is-5">Nov 2017 to Dec 2017</div>
+                    <div class="column">
+                      <p>Tutor<br>Providing tutelage for first year Computer Science students taking Comp160, Comp150 and Comp101.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="card-content">
-                <p><i class="fas fa-calendar-alt"></i>  <strong>2009</strong></p>
-                <p><i class="fas fa-university"></i>  CPIT</p>
-                <p><i class="fas fa-graduation-cap"></i>  Certificate of Adventure Recreation</p>
-
+              <div class="card">
+                <div class="card-content">
+                  <p><i class="fas fa-building"></i><a href="http://www.igtimi.com/">Igtimi Ltd</a></p>
+                  <div class="columns">
+                    <div class="column is-5">Nov 2016 to Dec 2016</div>
+                    <div class="column">
+                      <p>Internship<br>Updating existing webpages to be relevant and mobile friendly, creating new product pages and contact forms. </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
-      </div>
 
     </div>
-  </div>
+
+
+
+  <!--
+  <div class="tile is-child education">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Education
+              </p>
+            </header>
+            <div class="content">
+
+              <div class="card">
+                <div class="card-content">
+                  <p><i class="fas fa-calendar-alt"></i> <strong>2015 - 2017</strong></p>
+                  <p><i class="fas fa-university"></i> University of Otago</p>
+                  <p><i class="fas fa-graduation-cap"></i> BSc majoring in Computer Science</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <p><i class="fas fa-calendar-alt"></i> <strong>2013</strong></p>
+                  <p><i class="fas fa-university"></i> Dive Otago</p>
+                  <p><i class="fas fa-graduation-cap"></i> Diploma in Professional SCUBA Instruction</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <p><i class="fas fa-calendar-alt"></i> <strong>2012</strong></p>
+                  <p><i class="fas fa-university"></i> Outward Bound</p>
+                  <p><i class="fas fa-graduation-cap"></i> Certificate of Completion</p>
+                </div>
+              </div>
+              <div class="card">
+              <div class="card-content">
+              <p><i class="fas fa-calendar-alt"></i>  <strong>2009</strong></p>
+              <p><i class="fas fa-university"></i>  CPIT</p>
+              <p><i class="fas fa-graduation-cap"></i>  Certificate of Adventure Recreation</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  -->
 </template>
 
 <script>
-  export default{
+  export default {
     name: 'home'
   }
 </script>
@@ -133,13 +192,20 @@
   i {
     width: 20px;
   }
-  ul {
-    margin-top: 0!important;
-  }
-  .card-header-title{
-    /*background-color: #e7e7e7;*/
-    /*background-color: #8a8a8a;*/
 
+  ul {
+    margin-top: 0 !important;
+  }
+
+  .card-header-title {
+    /*background-color: #e7e7e7;*/
+  }
+
+  .education p {
+    margin-bottom: 0;
+  }
+  .card-content {
+    padding-top: 10px;
   }
 
 </style>
