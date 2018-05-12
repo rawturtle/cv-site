@@ -2,7 +2,9 @@
   <nav class="navbar has-shadow">
     <div class="navbar-brand">
       <a class="navbar-item" id="brand-link" href="#">
-        <!--<img src="../assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="125" height="55">-->
+        <!--<img src="../assets/images/logo.png" alt="lazy ass logo design that needs work" width="125" height="55">-->
+        <!--<router-link to="/home" class="link is-info"><p id="brand">/ crawstorn /</p></router-link>-->
+
         <p id="brand">/ crawstorn /</p>
       </a>
       <div class="navbar-burger burger" data-target="app-navbar">
@@ -48,8 +50,8 @@
               let $target = document.getElementById(target);
 
               // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-              $el.classList.toggle('active');
-              $target.classList.toggle('active');
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
 
             });
           });

@@ -2,22 +2,22 @@
   <div>
     <div class="tabs is-centered is-boxed">
       <ul>
-        <li class="is-active">
+        <li @click="selected='tab1'" v-bind:class="{'is-active': isActive('tab1')}">
           <a>
             <span>Igtimi #2</span>
           </a>
         </li>
-        <li>
+        <li @click="selected='tab2'" v-bind:class="{'is-active': isActive('tab2')}">
           <a>
             <span>Igtimi #1</span>
           </a>
         </li>
-        <li>
+        <li @click="selected='tab3'" v-bind:class="{'is-active': isActive('tab3')}">
           <a>
             <span>Octagon</span>
           </a>
         </li>
-        <li>
+        <li @click="selected='tab4'" v-bind:class="{'is-active': isActive('tab4')}">
           <a>
             <span>Tesh Website</span>
           </a>
@@ -26,9 +26,19 @@
     </div>
 
     <!--content-->
-    <div>
-      <igtimi-one></igtimi-one>
-
+    <div id="tab-content">
+      <p v-bind:class="{'is-active': isActive('tab1')}">
+        <igtimi-two></igtimi-two>
+      </p>
+      <p v-bind:class="{'is-active': isActive('tab2')}">
+        <igtimi-one></igtimi-one>
+      </p>
+      <p  v-bind:class="{'is-active': isActive('tab3')}">
+        Videos
+      </p>
+      <p v-bind:class="{'is-active': isActive('tab4')}">
+        Documents
+      </p>
     </div>
     <!--end content-->
 
@@ -36,15 +46,35 @@
 </template>
 
 <script>
+  import igtimiTwo from "./portfolio/igtimiTwo";
   import igtimiOne from "./portfolio/igtimiOne";
 
-  export default{
+  export default {
     name: 'about',
-    // data() {
-    //
-    // },
     components: {
-      'igtimi-one': igtimiOne
+      'igtimi-one': igtimiOne,
+      'igtimi-two': igtimiTwo,
+    },
+    data() {
+      return {
+        selected: 'tab1'
+      }
+    },
+    methods: {
+      isActive(item) {
+        return this.selected === item
+      }
     }
   }
 </script>
+
+<style scoped>
+  #tab-content p {
+    display: none;
+  }
+
+  #tab-content p.is-active {
+    display: block;
+  }
+
+</style>

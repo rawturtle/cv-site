@@ -137,9 +137,9 @@
     margin-top: 0!important;
   }
   .card-header-title{
-    background-color: #e7e7e7;
+    /*background-color: #e7e7e7;*/
+    background-color: #ADD8E6;
+
   }
-  .gap {
-    height: 24px;
-  }
+
 </style>

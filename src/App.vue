@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <navbar />
-      <section class="section">
+      <section class="section ">
         <div class="container is-fluid">
           <router-view/>
         </div>
@@ -26,6 +26,6 @@
 
 <style>
 #app {
-
 }
+  .section {}
 </style>
