@@ -25,5 +25,12 @@
 
 <style>
 #app {
-}
+  }
+  a:hover {
+    color: #008081 !important;
+  }
+  a {
+    color: #008081!important;
+  }
+
 </style>

@@ -2,7 +2,7 @@
   <nav class="navbar has-shadow">
 
     <div class="navbar-brand">
-        <router-link to="/home" class="link is-info navbar-item"><p id="brand">/ crawstorn /</p></router-link>
+        <router-link to="/" class="link is-info navbar-item"><p id="brand" exact>/ crawstorn /</p></router-link>
       <div class="navbar-burger burger" data-target="app-navbar">
         <span></span>
         <span></span>
@@ -12,9 +12,9 @@
 
     <div id="app-navbar" class="navbar-menu">
       <div class="navbar-start">
-          <router-link to="/home" class="link is-info navbar-item">Home</router-link>
-          <router-link to="/portfolio" class="link is-info navbar-item">Portfolio</router-link>
-          <router-link to="/transcript" class="link is-info navbar-item">Transcript</router-link>
+          <router-link to="/" class="link is-info navbar-item" exact>Home</router-link>
+          <router-link to="/portfolio" class="link is-info navbar-item" exact>Portfolio</router-link>
+          <router-link to="/transcript" class="link is-info navbar-item" exact>Transcript</router-link>
       </div>
     </div>
 

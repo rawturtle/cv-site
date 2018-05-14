@@ -9,7 +9,7 @@ import transcript from '../components/pages/transcript.vue';
 
 // application routes
 const routes = [
-  { path: '/home', component: home },
+  { path: '/', component: home },
   { path: '/portfolio', component: portfolio },
   { path: '/transcript', component: transcript }
 ]

@@ -90,7 +90,8 @@
                           <p>March 2018 to Present</p>
                         </div>
                         <div class="column">
-                          <p>Web Developer<br> Using Vue.js to create bespoke web
+                          <p class="job-title">Web Developer</p>
+                          <p>Using Vue.js to create bespoke web
                             applications</p>
                         </div>
                       </div>
@@ -103,8 +104,22 @@
                       <div class="columns">
                         <div class="column is-5">Nov 2017 to Dec 2017</div>
                         <div class="column">
-                          <p>Internship <br> Creating an application to parse config files into a GUI so they can be
+                          <p class="job-title">Internship </p>
+                          <p>Creating an application to parse config files into a GUI so they can be
                             reconfigured by the client.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card work-card">
+                    <div class="card-content">
+                      <p><i class="fas fa-building"></i><a href="http://www.igtimi.com/">Igtimi Ltd</a></p>
+                      <div class="columns">
+                        <div class="column is-5">Nov 2016 to Dec 2016</div>
+                        <div class="column">
+                          <p class="job-title">Internship</p>
+                          <p>Updating existing webpages to be relevant and mobile friendly, creating new
+                            product pages and contact forms. </p>
                         </div>
                       </div>
                     </div>
@@ -114,28 +129,15 @@
                     <div class="card-content">
                       <p><i class="fas fa-building"></i><a href="https://www.otago.ac.nz/">Otago University</a></p>
                       <div class="columns">
-                        <div class="column is-5">Nov 2017 to Dec 2017</div>
+                        <div class="column is-5">July 2016 to Nov 2017</div>
                         <div class="column">
-                          <p>Tutor<br>Providing tutelage for first year Computer Science students taking Comp160,
-                            Comp150
-                            and Comp101.</p>
+                          <p class="job-title">Tutor</p>
+                          <p>Providing tutelage for first year Computer Science students taking Comp160, Comp150 and Comp101.</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="card work-card">
-                    <div class="card-content">
-                      <p><i class="fas fa-building"></i><a href="http://www.igtimi.com/">Igtimi Ltd</a></p>
-                      <div class="columns">
-                        <div class="column is-5">Nov 2016 to Dec 2016</div>
-                        <div class="column">
-                          <p>Internship<br>Updating existing webpages to be relevant and mobile friendly, creating new
-                            product pages and contact forms. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
                 </div>
               </div>
@@ -149,7 +151,7 @@
       <div class="column">
         <div class="tile">
           <div class="tile education is-parent">
-            <div class="card">
+            <div class="card education-card-wrapper">
               <header class="card-header">
                 <p class="card-header-title">
                   Education
@@ -216,45 +218,40 @@
 </script>
 
 <style scoped>
+  i {
+    width: 20px;
+  }
+  ul {
+    margin-top: 0;
+  }
+  .card-header {
+    background-color: #008081;
+  }
+  .card {
+    box-sizing: border-box;
+  }
+  .card-content {
+    padding-top: 10px;
+  }
+  .job-title {
+    font-style: italic;
+    margin-bottom: 0!important;
+    font-size: medium;
+  }
   .work-card {
     border: 1px solid rgba(10,10,10,.1);
     border-bottom: none;
     box-shadow: none;
   }
+  .education-card-wrapper {
+    min-width: 100%;
+  }
   .education-card {
     border: none;
     box-shadow: none;
     min-height: 100%;
-
   }
-
-  /*.column {*/
-    /*background-color: #fff;*/
-  /*}*/
-
-  i {
-    width: 20px;
-  }
-
-  ul {
-    margin-top: 0;
-  }
-
-  .card-header {
-    background-color: #e7e7e7 ;
-  }
-  .card {
-    box-sizing: border-box;
-  }
-
   .education p {
     margin-bottom: 0;
   }
-
-  .card-content {
-    padding-top: 10px;
-  }
-/*
-rgba(10,10,10,.1)
-*/
 </style>
