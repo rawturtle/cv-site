@@ -13,7 +13,7 @@
                 </header>
                 <div class="card-image">
                   <figure class="image">
-                    <img src="../../assets/images/myface.jpg" alt="My face">
+                    <img src="../../assets/images/surfboardwetsuit.jpg" alt="My face">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -223,6 +223,10 @@
   }
   ul {
     margin-top: 0;
+  }
+  .card-header-title {
+    color: white;
+
   }
   .card-header {
     background-color: #008081;
